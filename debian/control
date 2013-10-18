@@ -1,0 +1,12 @@
+Source: huayra-mdm-themes
+Section: admin
+Priority: optional
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: huayra-mdm-themes
+Architecture: all
+Description: Temas de MDM para Huayra GNU/Linux
+ Temas para el display manager (mdm) de Huayra GNU/Linux.
+
