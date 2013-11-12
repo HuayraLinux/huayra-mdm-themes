@@ -105,7 +105,7 @@
 		function mdm_add_user(username, gecos, status) {
 											
 			var link = document.createElement('a');
-				link.setAttribute('class', 'user');
+				link.setAttribute('class', 'user tilt');
 				link.setAttribute('href', "javascript:alert('USER###"+username+"')");				
 		
 			var picture = document.createElement('img');
@@ -269,7 +269,7 @@
 		}			
 		
 		function select_user(index) {					
-			var table = document.getElementById("users");
+			var table = document.getElementById("users-wrapper");
 			var rowCount = table.rows.length;
 			var row_to_select = index % rowCount;
 			if (row_to_select < 0) {
@@ -284,7 +284,7 @@
 			row.style.backgroundColor = 'rgba(80,80,80,0.5)';     
 
 			selected_row = row_to_select;   
-
+			
 			alert('USER###'+row.username);
 		}		
 
@@ -368,10 +368,10 @@
     </div>
 
 	<div id="top">
-		<table id="users-wrapper">
+		<div id="input-box-wrapper">
+			<table id="users-wrapper">
 			
 		</table>
-		<div id="input-box-wrapper">
 			<form onSubmit="return send_login();">
 				<fieldset>			
 					<label id="input-box-label">Ingrese Usuario:</label>
@@ -380,7 +380,8 @@
 				</fieldset>
 			</form>
 		</div>
-		
+		<div id="logo">
+		</div>
 	</div>
 	<div id="error" class="hide" style="display: none;"></div>
 	<div id="menu-bar">
@@ -425,5 +426,7 @@
 	Mousetrap.bind('tab', function() {
     	document.getElementById("input-box").focus();
 	});
+	
+	
 </script>
 

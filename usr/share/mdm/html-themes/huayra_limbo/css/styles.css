@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
+	font-family: Asap;
 }
 
 #wrapper {
@@ -30,88 +31,14 @@ body {
 
 }
 
-#users-wrapper {
-	display: block;
-	position: relative;
-	width: 350px;
-	height: 240px;
-	top: 53%;
-	left: 2%;
-	margin: -100px auto 0 auto;
-	float: left;
-	border: 1px solid rgba(0, 0, 0, 0.35);
-	border-radius: 15px;
-	background-color: rgba(46, 46, 46, 0.35);
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-	overflow-y: auto;
-}
-
-#users-wrapper a {
-	text-decoration: none;
-}
-
-.user {
-	display: block;
-	position: relative;
-	width: 320px;
-	height: 98px;
-	left: 0;
-	right: 0;
-	margin: 13px auto 0 12px;
-	background-color: rgba(100,100,100,0.5);
-	border: 1px solid rgba(0,0,0,0.2);
-	border-radius: 15px;
-}
-
-.user:hover, .user:active {
-	background-color: #a5cb58;
-	border: 1px solid #5a5a5a;
-	cursor: pointer;
-}
-
-.user-pic {
-	display: block;
-	position: relative;
-	float: left;
-	margin: 6px 15px 0 6px;
-	width: 85px;
-	height: 85px;
-}
-
-.user-gecos, .username {
-	display: block;
-	position: relative;
-	width: 200px;
-	height: 15px;
-	margin: 6px 0 0 23px;
-	font-weight: normal;
-	font-size: 1.3em;
-	color: rgb(28,37,11);
-	text-decoration: none;
-}
-
-.user-status {
-	display: block;
-	position: relative;
-	width: 200px;
-	height: 15px;
-	margin: 6px 0 0 23px;
-	font-weight: normal;
-	font-style: italic;
-	font-size: 1em;
-	color: rgb(28,37,11);
-	text-decoration: none;
-}
-
 #input-box-wrapper {
 	display: block;
 	position: relative;
-	float: right;
-	right: 0;
-	top: 0;
+	float: left;
 	width: 370px;
-	height: 420px;
-	background: url(../images/logo.png) no-repeat top center;
+	height: 420px;	
+
+	margin: 0 auto;
 }
 
 #input-box-label, label {
@@ -151,10 +78,10 @@ button#ok_button:hover {
 }
 
 form fieldset {
-	position: absolute;
-	bottom: 90px;
+	position: relative;
 	border: 0;
-	margin-left: 50px;
+	top: 20px;
+	margin: 40px 0 0 35px;
 }
 
 #input-box, .input {
@@ -188,6 +115,108 @@ form fieldset {
 	font-size: 1em;
 	font-family: Asap;
 }
+
+#users-wrapper {
+	display: block;
+	position: relative;
+	width: 350px;
+	height: 240px;
+	top: 0;
+	left: 2%;
+	margin: 0 auto 0 auto;
+	float: left;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	border-radius: 15px;
+	background-color: rgba(46, 46, 46, 0.35);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	overflow-y: auto;
+}
+
+#users-wrapper a {
+	text-decoration: none;
+}
+
+a.user, .user {
+	display: block;
+	position: relative;
+	width: 320px;
+	height: 98px;
+	left: 0;
+	right: 0;
+	margin: 13px auto 0 12px;
+	background: -webkit-linear-gradient(top, rgba(240,240,240,1), rgba(190,190,190,1));
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 15px;
+	color: rgb(28,37,11);
+	/*-webkit-border-image: -webkit-linear-gradient(top, rgba(200,200,200,1), rgba(150,150,150,1));*/
+}
+
+a.user:visited, .user:visited, a.user:hover, a.user:active, .user:active, a.user-selected, .user-selected {
+	/*background-color: #158994; #a5cb58;*/
+	color: white;
+	background: -webkit-linear-gradient(top, rgba(11,178,194,1), rgba(3,201,220,1));
+	border: 1px solid #5a5a5a;
+	cursor: pointer;
+}
+
+
+
+.user-pic {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 12px 15px 0 10px;
+	width: 75px;
+	height: 75px;
+	background: transparent;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 6px;
+	box-shadow: 0 0 6px black;
+}
+
+.user-pic img {
+	width: 75px;
+	height: 75px;
+}
+
+.user-gecos, .username {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 15px;
+	margin: 6px 0 0 23px;
+	font-weight: normal;
+	font-size: 1.3em;
+	/*color: rgb(28,37,11);*/
+	text-decoration: none;
+}
+
+.user-status {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 15px;
+	margin: 6px 0 0 23px;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 1em;
+	/*color: rgb(28,37,11);*/
+	text-decoration: none;
+}
+	
+
+#logo {
+	display: block;
+	position: relative;
+	float: right;
+	right: 0;
+	top: 0;
+	width: 370px;
+	height: 420px;
+	background: url(../images/logo.png) no-repeat top center;
+}
+
+
 
 #error {
 	display: block;
@@ -227,6 +256,7 @@ form fieldset {
 	height: 100%;
 	/*background: url(../images/bg_panel-options.png) no-repeat center center;*/
 	background-color: rgba(0,0,0,0.4);
+	
 	left: 0;
 	right: 0;
 	margin: 0 auto;	
@@ -241,6 +271,7 @@ form fieldset {
 	width: 400px;
 	height: 50%;
 	background-color: rgba(220,220,220,0.9);
+	
 	border: 1px solid rgba(0,0,0,0.4);
 	border-radius: 15px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.6);
@@ -274,11 +305,15 @@ form fieldset {
 	border: 1px solid rgba(0,0,0,0.5); 
 	border-radius: 8px;	
 	text-align: left;
+	background: -webkit-linear-gradient(top, rgba(240,240,240,1), rgba(190,190,190,1));
+	color: black;
 }
 
 .menu-bar-table tr:hover {
-	background-color: rgba(165,203,88,0.7);
+	/*background-color: rgba(165,203,88,0.7);*/
+	background: -webkit-linear-gradient(top, rgba(11,178,194,1), rgba(3,201,220,1));
 	cursor: pointer;
+	color: white;
 }
 
 .bandera {
@@ -319,7 +354,11 @@ form fieldset {
 	padding: 2px 0 0 0;
 	margin-left: 30px;
 	font-size: 1em;
-	color: black;
+		color: black;
+}
+
+.menu-bar-table tr .idioma:hover, .menu-bar-table tr .session_name:hover {
+	color: white;
 }
 
 .close_btn {
@@ -328,14 +367,17 @@ form fieldset {
 	width: 90px;
 	height: 20px;
 	margin: 10px auto;
-	background-color: rgba(200,200,200,0.7);
+	/*background-color: rgba(200,200,200,0.7);*/
+	background: -webkit-linear-gradient(top, rgba(240,240,240,1), rgba(190,190,190,1));
 	border: 1px solid rgba(0,0,0,0.5);
 	border-radius: 8px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
 
 .close_btn:hover {
-	background-color: rgba(165,203,88,0.7);
+	/*background-color: rgba(165,203,88,0.7);*/
+	background: -webkit-linear-gradient(top, rgba(11,178,194,1), rgba(3,201,220,1));
+	color: white;
 	cursor: pointer;
 }
 
@@ -354,8 +396,12 @@ form fieldset {
 	display: block;
 	position: relative;
 	float: right;
-	margin-right: 10px;
+	margin-right: 30px;
 	margin-top: 13px;
+	font-family: Asap;
+	font-size: 1.15em;
+	font-weight: 500;
+	color: rgb(200,200,200);
 }
 
 #session-button, #quit-button, #lang-button {
@@ -452,7 +498,8 @@ a.btn.cancel-button {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(200,200,200,0.7);
+	/*background-color: rgba(200,200,200,0.7);*/
+	background: -webkit-linear-gradient(top, rgba(240,240,240,1), rgba(190,190,190,1));
 	border: 1px solid rgba(0,0,0,0.5);
 	border-radius: 8px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
@@ -461,7 +508,9 @@ a.btn.cancel-button {
 
 a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
 	background-color: rgba(165,203,88,0.7);
+	background: -webkit-linear-gradient(top, rgba(11,178,194,1), rgba(3,201,220,1));
 	cursor: pointer;
+	color: white;
 }
 
 .cancel-button h1 {
@@ -469,18 +518,21 @@ a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
 	color: rgb(28,37,11);
 }
 
+
 .quit-button, .suspend-button, .restart-button, .btn {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 115px;
+	width: 125px;
 	height: 37px;
 	border: 1px solid rgba(0,0,0,0.5);
 	border-color: rgba(0,0,0,0.5);
 	text-align: right;
 	padding: 4px;
-	background-color: rgba(200,200,200,0.7);
+	/*background-color: rgba(200,200,200,0.7);*/
 	background-image: none;
+	background: -webkit-linear-gradient(top, rgba(240,240,240,1), rgba(190,190,190,1));
+	
 	border-radius: 8px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
 	text-shadow: none;
@@ -489,6 +541,8 @@ a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
 
 .quit-button:hover, .quit-button:active, .suspend-button:hover, .suspend-button:active, .restart-button:hover, .restart-button:active, .btn:hover, .btn:active {
 	background-color: rgba(165,203,88,0.7);
+		background: -webkit-linear-gradient(top, rgba(11,178,194,1), rgba(3,201,220,1));
+	color: white;
 	cursor: pointer;
 }
 
@@ -502,12 +556,17 @@ a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
 	color: rgb(28,37,11);
 }
 
+.quit-button:hover h1, .suspend-button:hover h1, .restart-button:hover h1 {
+	color: white;
+}
+
 .quit-img, .suspend-img, .restart-img {
 	display: block;
 	position: relative;
 	float: left;
 	width: 37px;
 	height: 37px;
+	margin-left: 4px;
 }
 
 .quit-img {
@@ -522,4 +581,13 @@ a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
 	background: url(../images/restart.png) no-repeat center left;
 }
 
+
+/*TILT*/
+.tilt img{
+  -webkit-transition: all 0.1s ease-in-out;     
+}
+ 
+.tilt:hover img{
+  -webkit-transform: scale(1.08, 1.08);         
+}
 
