@@ -1,3 +1,4 @@
+
 body { 
 	background: url(../images/bg.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -401,7 +402,7 @@ a.user:visited, .user:visited, a.user:hover, a.user:active, .user:active, a.user
 	font-family: Asap;
 	font-size: 1.15em;
 	font-weight: 500;
-	color: rgb(200,200,200);
+	color: rgb(20,20,20);
 }
 
 #session-button, #quit-button, #lang-button {
@@ -591,3 +592,41 @@ a.btn.cancel-button:hover, .modal-footer .btn+.btn:hover {
   -webkit-transform: scale(1.08, 1.08);         
 }
 
+/* Scrollbar */
+
+.scrollbar
+{
+	background: transparent;
+	margin-left: 0;
+	float: left;
+	height: 100px;
+	width: 65px;
+	background: transparent;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 25px;
+}
+
+#users-wrapper::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	width: 40px;
+	height: 100px;
+	background-color: transparent;
+}
+
+#users-wrapper::-webkit-scrollbar
+{
+	width: 10px;
+	height: 100px;
+	background-color: transparent;
+}
+
+#users-wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	width: 10px;
+	height:30px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(3,201,220,0.5);
+}

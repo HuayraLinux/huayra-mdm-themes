@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	
 	<script src="js/bootstrap.min.js"></script>	
 	<script src="js/jquery-1.9.1.min.js"></script>	
 	<!-- bootbox code -->
@@ -10,11 +12,12 @@
 	<link href="css/styles.css" rel="stylesheet" media="screen">
 </head>
 <body>
-<script type="text/javascript" src="js/three.min.js"></script>
 		
 
 		<script>	
 			
+		var selected_user = -1;
+		var num_users = 0;
 		var selected_row = -1;
 	
 		// Called by MDM to disable user input
@@ -98,15 +101,22 @@
 		function init() {
 			document.getElementById("error").style.display = 'none';			
 			document.getElementById("timed").style.display = 'none';			
-			document.getElementById("current_session_picture").width = 16;				
+			//document.getElementById("current_session_picture").width = 16;	
+			//mdm_add_user("Test", "Test", "logged");	/*
+			//mdm_add_user("Proboleta", "sarlanga perez", "");
+			//mdm_add_user("Gualicho", "Gualicho Gomez", "");*/
 		}
+
 		
 		// Called by MDM to add a user to the list of users
 		function mdm_add_user(username, gecos, status) {
 											
 			var link = document.createElement('a');
+				user_id = "user"+num_users;
 				link.setAttribute('class', 'user tilt');
-				link.setAttribute('href', "javascript:alert('USER###"+username+"')");				
+				link.setAttribute('href', "javascript:alert('USER###"+username+"')");	
+				link.setAttribute('id', user_id);		
+				link.username = username;	
 		
 			var picture = document.createElement('img');
 				picture.setAttribute('class', "user-pic");
@@ -148,7 +158,12 @@
  
             var cell1 = row.insertCell(0);           
             cell1.width = "85px";
-            cell1.appendChild(link);                   			
+            cell1.appendChild(link);      
+            $('#'+user_id).click(function() {
+				$("a").removeClass("user-selected");
+				$(this).toggleClass("user-selected");
+			});
+            num_users = num_users + 1;               			
 
 		}	
 		
@@ -268,26 +283,47 @@
 			document.getElementById("xdmcp").style.display = 'none';
 		}			
 		
-		function select_user(index) {					
-			var table = document.getElementById("users-wrapper");
-			var rowCount = table.rows.length;
-			var row_to_select = index % rowCount;
-			if (row_to_select < 0) {
-				row_to_select = rowCount - 1;
+
+		function mdm_set_current_user(username)	{
+			//document.getElementById("lsb").innerHTML = username;
+			for (var i=0;i<num_users;i++) {
+				var user = document.getElementById("user" + i);
+				if (user.username == username) {
+					select_user_at_index(i, false);
+				}
 			}
+		}
 
-			for (var i = 0, row; row = table.rows[i]; i++) {				
-				row.style.backgroundColor = 'rgba(80,80,80,0.0)';
+		function select_user_at_index(index, alert_mdm) {					
+
+			var index_to_select = index;
+			if (index_to_select < 0) {
+				index_to_select = num_users - 1;
 			}
-
-			var row = table.rows[row_to_select];
-			row.style.backgroundColor = 'rgba(80,80,80,0.5)';     
-
-			selected_row = row_to_select;   
+			if (index_to_select >= num_users) {
+				index_to_select = 0;
+			}
 			
-			alert('USER###'+row.username);
-		}		
-
+			var username = null;
+			for (var i=0;i<num_users;i++) {
+				if (i < index_to_select) {
+					$("#user" + i).toggleClass("user-selected", false);
+				} else if  (i == index_to_select) {
+					var user = document.getElementById("user" + i);				
+					username = user.username;
+					$("a").removeClass("user-selected");
+					$('#user' + i).toggleClass("user-selected", true);
+				}
+				else {
+					$('#user' + i).toggleClass("user-selected", false);
+					//$('#user' + i).show();
+				}	
+				selected_user = index_to_select;
+			}	
+			if (alert_mdm) {
+				alert('USER###'+ username);
+			}
+		}	
 		function quit_dialog() {			
 			bootbox.dialog("$areyousuretoquit", 
 			[
@@ -369,9 +405,9 @@
 
 	<div id="top">
 		<div id="input-box-wrapper">
-			<table id="users-wrapper">
+			<table id="users-wrapper" class="scrollbar">
 			
-		</table>
+			</table>
 			<form onSubmit="return send_login();">
 				<fieldset>			
 					<label id="input-box-label">Ingrese Usuario:</label>
@@ -384,6 +420,7 @@
 		</div>
 	</div>
 	<div id="error" class="hide" style="display: none;"></div>
+	<div id="timed" class="hide" style="display: none;"></div>
 	<div id="menu-bar">
 		<div id="buttons">
 			<a href="#sessionSelection" role="button" id="session-button" data-toggle="modal" title="$selectsession"></a>
@@ -402,31 +439,41 @@
 
 <script>
 	init();
+	$("body").on("keydown", function(e){
+		if(e.keyCode === 38) {
+        	// up
+       		select_user_at_index(selected_user - 1, true);
+       		return false;   
+    	}
+    	else if(e.keyCode === 40) {
+        	// down
+        	select_user_at_index(selected_user + 1, true);
+        	return false;
+    	}
+    	else if (e.keyCode == 9) {
+    		// tab    
+    		$('#entry').focus();
+    		return false;
+    	}
+    	else if (e.keyCode == 13) {
+    		// enter
+    		if ($('#login_box').is(':hidden')) {
+    			return false;
+    		}
+    		else {
+    			send_login();
+    			return false;
+    		}
+    	}    	
+ 	});   	
 
-	Mousetrap.bind('up', function() {		
-    	select_user(selected_row - 1);
-	});
+	$(document).ready(function() {
+		document.getElementById("input-box").focus();
+        $("body").css("display", "none");
+        $("body").delay(1000).fadeIn(2000);
+		
 
-	Mousetrap.bind('down', function() {
-    	select_user(selected_row + 1);
-	});
+    });
 
-	Mousetrap.bind('ctrl+l', function() {
-    	$('#languageSelection').modal('show');
-	});
-
-	Mousetrap.bind('ctrl+s', function() {
-    	$('#sessionSelection').modal('show');
-	});
-
-	Mousetrap.bind('esc', function() {
-    	quit_dialog();
-	});
-
-	Mousetrap.bind('tab', function() {
-    	document.getElementById("input-box").focus();
-	});
-	
-	
 </script>
 
