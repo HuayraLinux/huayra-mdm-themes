@@ -325,10 +325,12 @@
 			}
 		}	
 		function quit_dialog() {			
-			bootbox.dialog("$areyousuretoquit", 
+			// bootbox.dialog("$areyousuretoquit", 
+				bootbox.dialog("Est&aacute;s seguro de querer salir?", 
 			[
 				{
-					"label" : "<i class='quit-img'></i><h1>$shutdown</h1>",
+					//"label" : "<i class='quit-img'></i><h1>$shutdown</h1>",
+					"label" : "<i class='quit-img'></i><h1>Apagar</h1>",
 					"class" : "quit-button",
 					"callback": function() {
 						alert('FORCE-SHUTDOWN###');
@@ -336,7 +338,8 @@
 				},
 
 				{
-					"label" : "<i class='suspend-img'></i><h1>$suspend</h1>",
+					//"label" : "<i class='suspend-img'></i><h1>$suspend</h1>",
+					"label" : "<i class='suspend-img'></i><h1>Suspender</h1>",
 					"class" : "suspend-button",
 					"callback": function() {
 						alert('FORCE-SUSPEND###');
@@ -344,7 +347,8 @@
 				},
 
 				{
-					"label" : "<i class='restart-img'></i><h1>$restart</h1>",
+					//"label" : "<i class='restart-img'></i><h1>$restart</h1>",
+					"label" : "<i class='restart-img'></i><h1>Reiniciar</h1>",
 					"class" : "restart-button",
 					"callback": function() {
 						alert('FORCE-RESTART###');
@@ -368,7 +372,7 @@
 				},*/ 
 
 				{
-					"label" : "Cancel",
+					"label" : "Cancelar",
 					"class" : "cancel-button"
 				}
 			]);
@@ -382,24 +386,24 @@
 	 <!-- Language selector -->
     <div id="languageSelection" class="hide menu-bar-options" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     	<div class="menu-bar-options-body">
-    	   <h3>$selectlanguage</h3>
+    	   <h3>Elegir idioma<!--$selectlanguage --></h3>
     		<table class="menu-bar-table" id="languages">
     		</table>
     	</div>
     	<div class="menu-bar-options-footer">
-    		<button class="close_btn" data-dismiss="modal" aria-hidden="true">$close</button>    		
+    		<button class="close_btn" data-dismiss="modal" aria-hidden="true">Cerrar<!-- $close --></button>    		
     	</div>
     </div>
 
     <!-- Session selector -->
     <div id="sessionSelection" class="hide menu-bar-options" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     	<div class="menu-bar-options-body">
-    	   <h3>$selectsession</h3>
+    	   <h3>Elegir sesi&oacute;n<!-- $selectsession --></h3>
     		<table class="menu-bar-table" id="sessions">
     		</table>
     	</div>
     	<div class="menu-bar-options-footer">
-    		<button class="close_btn" data-dismiss="modal" aria-hidden="true">$close</button>    		
+    		<button class="close_btn" data-dismiss="modal" aria-hidden="true">Cerrar<!-- $close --></button>    		
     	</div>
     </div>
 
@@ -423,9 +427,9 @@
 	<div id="timed" class="hide" style="display: none;"></div>
 	<div id="menu-bar">
 		<div id="buttons">
-			<a href="#sessionSelection" role="button" id="session-button" data-toggle="modal" title="$selectsession"></a>
-			<a href="#" onClick="quit_dialog();" title="$quit" id="quit-button"></a>
-			<a href="#languageSelection" role="button" id="lang-button" data-toggle="modal" title="$selectlanguage"></a>
+			<a href="#sessionSelection" role="button" id="session-button" data-toggle="modal" title="Elegir sesi&oacute;n"></a>
+			<a href="#" onClick="quit_dialog();" title="Salir" id="quit-button"></a>
+			<a href="#languageSelection" role="button" id="lang-button" data-toggle="modal" title="Elegir idioma"></a>
 		</div>
 		<div id="clock">
 		</div>
