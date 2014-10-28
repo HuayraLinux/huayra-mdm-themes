@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Ivan Hoffmann <digital.h@gmail.com>
 Build-Depends: debhelper (>= 5)
-Standards-Version: 3.7.2
+Standards-Version: 3.9.4
 Homepage: https://github.com/HuayraLinux/huayra-mdm-themes
 Vcs-Git: https://github.com/HuayraLinux/huayra-mdm-themes.git
 
