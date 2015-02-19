@@ -1,3 +1,15 @@
+huayra-mdm-themes (1.7) torbellino; urgency=medium
+
+  * Incremento de versión.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Thu, 19 Feb 2015 15:17:43 -0300
+
+huayra-mdm-themes (1.6) torbellino; urgency=medium
+
+  * Nuevo tema: Huayra Liso.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Thu, 19 Feb 2015 15:15:23 -0300
+
 huayra-mdm-themes (1.5) unstable; urgency=medium
 
   * correccion en los links de sesiones e idiomas
