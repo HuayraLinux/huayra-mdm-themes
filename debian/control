@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Ivan Hoffmann <digital.h@gmail.com>
 Build-Depends: debhelper (>= 5)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Homepage: https://github.com/HuayraLinux/huayra-mdm-themes
 Vcs-Git: https://github.com/HuayraLinux/huayra-mdm-themes.git
 
@@ -26,17 +26,26 @@ Description: Temas de MDM para Huayra GNU/Linux.
  Este es un paquete virtual que instala todos los temas disponibles.
  (dummy package).
 
-Package: huayra-mdm-themes-limbo
+Package: huayra-mdm-themes-common
 Depends: ${misc:Depends}
+Breaks: huayra-mdm-themes ( <=1.6)
+Replaces: huayra-mdm-themes ( <= 1.6)
+Architecture: all
+Description: Contenido común a todos los temas de MDM.
+ Este paquete instala todo el contenido común a los temas de MDM.
+
+Package: huayra-mdm-themes-limbo
+Depends: ${misc:Depends}, huayra-mdm-themes-common
+Breaks: huayra-mdm-themes ( <=1.6)
+Replaces: huayra-mdm-themes ( <= 1.6)
 Architecture: all
 Description: Tema Huayra Limbo para MDM Login Manager.
  Tema oficial de MDM para Huayra 2.0.
 
 Package: huayra-mdm-themes-liso
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, huayra-mdm-themes-common
+Breaks: huayra-mdm-themes ( <=1.6)
+Replaces: huayra-mdm-themes ( <= 1.6)
 Architecture: all
 Description: Tema Huayra Liso para MDM Login Manager.
  Tema oficial de MDM para Huayra 3.0.
-
-
-
