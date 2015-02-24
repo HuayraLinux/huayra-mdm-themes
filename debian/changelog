@@ -1,3 +1,16 @@
+huayra-mdm-themes (1.9) torbellino; urgency=medium
+
+  * Fix en tema Liso para selección de usuarios (Fernando Toledo).
+    Set de iconos Flat de sesiones para tema Liso (Carolina Hortal).
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 24 Feb 2015 11:55:05 -0300
+
+huayra-mdm-themes (1.8) torbellino; urgency=medium
+
+  * Correcciones en debian/control para resolver conflictos de upgrade.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Fri, 20 Feb 2015 10:45:30 -0300
+
 huayra-mdm-themes (1.7) torbellino; urgency=medium
 
   * Incremento de versión.

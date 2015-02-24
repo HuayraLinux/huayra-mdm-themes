@@ -134,18 +134,7 @@
         function init() {
             document.getElementById("error").style.display = 'none';            
             document.getElementById("timed").style.display = 'none';            
-            document.getElementById("current_session_picture").width = 16; 
-            //~ mdm_add_user("Test", "Test", "logged");
-            //~ mdm_add_user("Proboleta", "sarlanga perez", "");
-            //~ mdm_add_user("alumnotest", "Usuario de Mentira", "");
-            //~ mdm_add_user("rucucuelgrande", "Otro usuario falso para probar", "");
-            //~ mdm_add_user("oblongo", "Longo Ob Longo", "");
-            //~ mdm_add_session("Mate", "mate");
-            //~ mdm_add_session("Sesión de XFCE", "xfce.desktop");
-            //~ mdm_add_session("Ubuntu", "ubuntu.desktop");
-            //~ mdm_add_user("Gualicho", "Gualicho Gomez", "");
-            //~ mdm_add_language("US English", "us");
-            //~ mdm_add_language("Spanish", "es");
+            document.getElementById("current_session_picture").width = 16;
         }
         
         // Called by MDM to add a user to the list of users
@@ -199,8 +188,7 @@
                 
             var picture = document.createElement('img');
                 picture.setAttribute('class', "session-picture");
-                picture.setAttribute('src', "../../common/img/sessions/"+filename+".svg");
-                //~ picture.setAttribute('onerror', "this.src='../../common/img/sessions/default.svg';");
+                picture.setAttribute('src', "img/sessions/"+filename+".svg");
                 picture.setAttribute('onerror', "this.src='img/session_generic.svg';");
                             
             var name_div = document.createTextNode(session_name);               
@@ -229,7 +217,7 @@
             filename = filename.replace(/ /g, "-");
             filename = filename.replace(/\(/g, "");
             filename = filename.replace(/\)/g, "");
-            document.getElementById("current_session_picture").src = "../../common/img/sessions/"+filename+".svg";
+            document.getElementById("current_session_picture").src = "img/sessions/"+filename+".svg";
             document.getElementById("current_session_picture").title = session_name;
             document.getElementById("current_session_picture").width = 16;
             $('#current_session_picture').popover('hide');
@@ -294,8 +282,10 @@
                 var user = document.getElementById("user" + i);
                 if (user.username == username) {
                     select_user_at_index(i, false);
+                    return;
                 }
             }
+            select_user_at_index(0,true);
         }
 
         function select_user_at_index(index, alert_mdm) {                   
@@ -560,29 +550,29 @@
         });
     
 
-      $.fn.animateTo = function(appendTo, destination, duration, easing, complete) {
-  if(appendTo !== 'appendTo'     &&
-     appendTo !== 'prependTo'    &&
-     appendTo !== 'insertBefore' &&
-     appendTo !== 'insertAfter') return this;
-  var target = this.clone(true).css('visibility','hidden')[appendTo](destination);
-  this.css({
-    'position' : 'relative',
-    'top'      : '0px',
-    'left'     : '0px'
-  }).animate({
-    //~ 'top'  : (target.offset().top - this.offset().top)+'px',
-    //~ 'left' : (target.offset().left - this.offset().left)+'px'
-    'top'  : '0',
-    'right' : '0'
-  }, duration, easing, function() {
-    target.replaceWith($(this));
-    $(this).css({
-      'position' : 'static',
-      'top'      : '0',
-      'left'     : '0'
-    });
-    if($.isFunction(complete)) complete.call(this);
-  });
-}
+    $.fn.animateTo = function(appendTo, destination, duration, easing, complete) {
+        if(appendTo !== 'appendTo'     &&
+        appendTo !== 'prependTo'    &&
+        appendTo !== 'insertBefore' &&
+        appendTo !== 'insertAfter') return this;
+        var target = this.clone(true).css('visibility','hidden')[appendTo](destination);
+        this.css({
+            'position' : 'relative',
+            'top'      : '0px',
+            'left'     : '0px'
+        }).animate({
+            //~ 'top'  : (target.offset().top - this.offset().top)+'px',
+            //~ 'left' : (target.offset().left - this.offset().left)+'px'
+            'top'  : '0',
+            'right' : '0'
+        }, duration, easing, function() {
+            target.replaceWith($(this));
+            $(this).css({
+                'position' : 'static',
+                'top'      : '0',
+                'left'     : '0'
+            });
+            if($.isFunction(complete)) complete.call(this);
+        });
+    }
 </script>
