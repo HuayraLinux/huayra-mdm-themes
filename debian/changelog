@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.11) torbellino; urgency=medium
+
+  * Mejora en estilo del mensaje "Ya inició sesión".
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Wed, 04 Mar 2015 11:57:52 -0300
+
 huayra-mdm-themes (1.10) torbellino; urgency=medium
 
   * Banderas de idioma de paises latinoamericanos en SVG (Caro Hortal).

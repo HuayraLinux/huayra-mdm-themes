@@ -212,13 +212,14 @@ a:focus {
 
 #selected_status {
     position: absolute;
-    margin-left: 13px;
-    margin-top: 138px;  
+    margin-left: 135px;
+    margin-top: 180px;  
     font-style: italic;
-    font-family: "Sawasdee";
+    font-family: "Chivo";
     font-size:14px;
     line-height: 20px;  
     font-weight:300;
+    color: rgb(92, 57, 32);
 }
 
 #entry_box {
