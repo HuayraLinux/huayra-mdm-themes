@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.13) torbellino; urgency=medium
+
+  * Fix en nombre completo cuando está vacío.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 10 Mar 2015 15:17:02 -0300
+
 huayra-mdm-themes (1.12) torbellino; urgency=medium
 
   * Mejoras en la selección de usuario.

@@ -135,7 +135,6 @@
             document.getElementById("error").style.display = 'none';            
             document.getElementById("timed").style.display = 'none';            
             document.getElementById("current_session_picture").width = 16;
-            
         }
         
         // Called by MDM to add a user to the list of users
@@ -160,7 +159,11 @@
 
             var font_gecos = document.createElement('font');
                 font_gecos.setAttribute('class', "font_gecos");
-                font_gecos.innerHTML = " (" + gecos + ")";
+                if (gecos.length != 0) {
+                    font_gecos.innerHTML = " (" + gecos + ")";
+                } else {
+                    font_gecos.innerHTML = gecos;
+                }
 
             var div_users_arrows = document.createElement('div');
                 div_users_arrows.setAttribute('id', "user_arrows");
