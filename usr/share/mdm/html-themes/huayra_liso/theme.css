@@ -66,6 +66,7 @@ a:focus {
     position: absolute;
     width: 100%;
     top: 0;
+    display: none;
 }
 
 #top_inner_box {    
@@ -175,6 +176,32 @@ a:focus {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #ffc082;
+}
+
+#user_arrows {
+    display: inline-block;
+    width: 21px;
+    height: 39px;
+    right: -30px;
+    top: 11px;
+    position: absolute;
+}
+
+#user_arrow_up,
+#user_arrow_dw {
+    width: 21px;
+    height: 15px;
+    background: url(img/user_arrows_off.png) center center no-repeat;
+    cursor: pointer;
+}
+
+#user_arrow_up {
+    background-position: 0 0;
+    margin-bottom: 7px;
+}
+
+#user_arrow_dw {
+    background-position: 0 -24px;
 }
 
 #current_session_picture {

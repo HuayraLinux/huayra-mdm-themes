@@ -135,6 +135,7 @@
             document.getElementById("error").style.display = 'none';            
             document.getElementById("timed").style.display = 'none';            
             document.getElementById("current_session_picture").width = 16;
+            
         }
         
         // Called by MDM to add a user to the list of users
@@ -161,9 +162,17 @@
                 font_gecos.setAttribute('class', "font_gecos");
                 font_gecos.innerHTML = " (" + gecos + ")";
 
+            var div_users_arrows = document.createElement('div');
+                div_users_arrows.setAttribute('id', "user_arrows");
+                div_users_arrows.innerHTML = "<div id='user_arrow_up' onClick='javascript:select_user_at_index(selected_user - 1, true);'></div><div id='user_arrow_dw' onClick='javascript:select_user_at_index(selected_user + 1, true);'></div>";
+            
+                    
+            
             div.appendChild(font_username);
             div.appendChild(font_gecos);
+            div.appendChild(div_users_arrows)
             link.appendChild(div);
+            
             top_users.appendChild(link);
 
             num_users = num_users + 1;             
@@ -406,6 +415,7 @@
                     <div id="entry_box"><input type="text" id="entry" placeholder="contrase&ntilde;a"></div>
                     <div id="ok_button_box"><input type="submit" id="ok_button" value=""></input></div>        
                 </form>
+                
                 <div id="sessions-title" class="hide">$selectsession</div>
                 <div id="sessions-body" class="hide">
                     <table class="table-hover table-condensed" id="sessions"></table><p></p>
@@ -493,6 +503,8 @@
             }
         }       
     });     
+
+    
 
     // Panning
     panning = new Motio(document.getElementById('background'), {

@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.12) torbellino; urgency=medium
+
+  * Mejoras en la selección de usuario.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 10 Mar 2015 15:02:10 -0300
+
 huayra-mdm-themes (1.11) torbellino; urgency=medium
 
   * Mejora en estilo del mensaje "Ya inició sesión".
