@@ -348,9 +348,10 @@ a:focus {
 #messages {
     display: inline-block;
     position: relative;
-    width: 700px;
+    width: 800px;
     height: 40px;
     float: left;
+    text-align: left;
 }
 
 #options {
@@ -432,7 +433,7 @@ a:focus {
     border-radius: 10px;
     background: rgba(161, 31, 8, 0.9);
     padding: 8px 8px 8px 8px;    
-    margin-left: 13%;   
+    margin-left: 11%;   
     color: rgb(242,242,242);
 }
 

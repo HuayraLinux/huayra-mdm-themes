@@ -167,7 +167,7 @@
 
             var div_users_arrows = document.createElement('div');
                 div_users_arrows.setAttribute('id', "user_arrows");
-                div_users_arrows.innerHTML = "<div id='user_arrow_up' onClick='javascript:select_user_at_index(selected_user - 1, true);'></div><div id='user_arrow_dw' onClick='javascript:select_user_at_index(selected_user + 1, true);'></div>";
+                div_users_arrows.innerHTML = "<div id='user_arrow_up' onClick='javascript:select_user_at_index(selected_user - 1, true); return false;'></div><div id='user_arrow_dw' onClick='javascript:select_user_at_index(selected_user + 1, true); return false;'></div>";
             
                     
             

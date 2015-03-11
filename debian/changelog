@@ -1,3 +1,10 @@
+huayra-mdm-themes (1.14) torbellino; urgency=medium
+
+  * Fix en botones de selección de usuario.
+    Ajustes del mensaje de error.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Wed, 11 Mar 2015 13:55:23 -0300
+
 huayra-mdm-themes (1.13) torbellino; urgency=medium
 
   * Fix en nombre completo cuando está vacío.
