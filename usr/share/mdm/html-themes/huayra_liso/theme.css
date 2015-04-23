@@ -7,7 +7,16 @@ html {
     background-color: #000000;
 }
 
-body {  
+body {
+    background-color: #326696;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    /*  font-family: Monospace;*/
+    
     font-family: Chivo;
     position: absolute;
     height: 100%;
@@ -16,12 +25,25 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
+
+a {
+    /*    color: #0078ff;*/
+    
+    color: #dedede;
+    text-decoration: none;
+}
+/* unvisited link */
 
 a:focus {
     outline: 0px solid black!important;
 }
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* mouse over link */
 
 .background {
     position: fixed;
@@ -45,15 +67,15 @@ a:focus {
     top: 55%;
 }
 
-#left_box { 
-    display:table;
-    position: fixed;    
+#left_box {
+    display: table;
+    position: fixed;
     width: 100%;
     height: 90%;
 }
 
 #login_box {
-    position:absolute;
+    position: absolute;
     width: 700px;
     height: 100%;
     left: 50%;
@@ -62,25 +84,27 @@ a:focus {
     color: white;
 }
 
-#top_box {  
+#top_box {
     position: absolute;
     width: 100%;
     top: 0;
-    display: none;
+/*    display: none; */
 }
 
-#top_inner_box {    
+#top_inner_box {
     display: block;
     position: relative;
     margin: 0 auto;
     width: 700px;
 }
+
 #bottom_users {
     position: static;
     width: 100%;
     top: 0px;
-    left: 0px;  
+    left: 0px;
 }
+
 #top_users {
     position: static;
     width: 100%;
@@ -121,7 +145,7 @@ a:focus {
     position: fixed;
     right: 0px;
     vertical-align: middle;
-    height: 90%;   
+    height: 90%;
     width: 10%;
 }
 
@@ -130,35 +154,33 @@ a:focus {
     overflow-y: auto;
 }
 
-
-
 .user_box {
     color: #946537;
     position: relative;
-    margin-left: 250px; 
+    margin-left: 250px;
     text-align: left;
     font-family: "Chivo";
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.font_username {    
+.font_username {
     font-family: "Chivo";
-    font-size:20px;
+    font-size: 20px;
     font-weight: normal;
 }
 
 .font_gecos {
     font-family: "Chivo";
-    font-size:16px;
+    font-size: 16px;
     font-style: italic;
     font-weight: lighter;
 }
 
-#selected_user .font_username { 
+#selected_user .font_username {
     padding: 6px 10px 6px 10px;
-    font-family: "Chivo";    
-    font-size:20px;
+    font-family: "Chivo";
+    font-size: 20px;
     text-shadow: none;
     border: 1px solid #ffc082;
     border-top-left-radius: 10px;
@@ -205,7 +227,7 @@ a:focus {
 }
 
 #current_session_picture {
-/*
+    /*
     position: absolute;
     top: 10px;
     left: 376px;
@@ -213,7 +235,7 @@ a:focus {
 }
 
 #current_language_flag {
-/*
+    /*
     position: absolute;
     top: 10px;
     left: 346px;
@@ -226,9 +248,9 @@ a:focus {
 }
 
 #selected_avatar {
-    position:absolute;
+    position: absolute;
     left: 24px;
-    top: 0px;  
+    top: 0px;
     width: 96px;
     height: 96px;
     border: 8px solid white;
@@ -240,17 +262,17 @@ a:focus {
 #selected_status {
     position: absolute;
     margin-left: 135px;
-    margin-top: 180px;  
+    margin-top: 180px;
     font-style: italic;
     font-family: "Chivo";
-    font-size:14px;
-    line-height: 20px;  
-    font-weight:300;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
     color: rgb(92, 57, 32);
 }
 
 #entry_box {
-    position: absolute; 
+    position: absolute;
     margin-top: 120px;
     margin-left: 120px;
     height: 55px;
@@ -264,23 +286,23 @@ a:focus {
     display: block;
     width: 200px;
     height: 37px;
-    padding: 5px 5px 5px 10px;  
+    padding: 5px 5px 5px 10px;
     font-size: 20px;
     outline: none;
-    -webkit-transition: .3s ease-in-out;  
-    -moz-transition: .3s ease-in-out;      
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
     background: #ffc082;
     border-radius: 10px;
     border: none;
     color: #4d4d4d;
 }
- 
-#entry:focus {      
-     box-shadow:inset 0 0 1px 1px rgba(255,255,255,0.4);
+
+#entry:focus {
+    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
 #ok_button_box {
-    position: absolute; 
+    position: absolute;
     margin-top: 133px;
     margin-left: 263px;
     width: 118px;
@@ -298,13 +320,12 @@ a:focus {
     color: white;
 }
 
-.session-picture, 
+.session-picture,
 .language-picture {
     width: 32px;
-    height: 32px;   
-    margin-right: 5px;  
+    height: 32px;
+    margin-right: 5px;
 }
-
 /*#welcome_message {    
     position: relative; 
     top: 50%;
@@ -319,26 +340,25 @@ a:focus {
 */
 
 #lsb {
-    position: relative;     
+    position: relative;
     margin-left: auto;
     color: #999;
     width: 100%;
     font-family: "Chivo";
     text-shadow: 0 1px 3px #000;
-    font-size:30px;
-    line-height: 40px;  
-    font-weight:300;
-/*
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 300;
+    /*
     visibility: hidden;
 */
 }
-
 
 #panel {
     position: absolute;
     right: 0;
     bottom: 5%;
-    text-align:right;        
+    text-align: right;
     height: 40px;
     width: 100%;
     padding-top: 5px;
@@ -365,7 +385,7 @@ a:focus {
     width: 28px;
     height: 28px;
     margin: 0 8px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #clock {
@@ -374,8 +394,8 @@ a:focus {
     color: #666;
     width: 170px;
     font-family: Chivo;
-    font-size:17px;
-    font-weight:normal;
+    font-size: 17px;
+    font-weight: normal;
 }
 /*
 
@@ -391,13 +411,10 @@ a:focus {
 }
 */
 
-
-#quit_dialog {
-    
-}
+#quit_dialog {}
 
 #quit:hover {
-    text-shadow: 0 1px 3px rgba(70,70,70, 1);
+    text-shadow: 0 1px 3px rgba(70, 70, 70, 1);
 }
 
 .quit_buttons {
@@ -432,9 +449,9 @@ a:focus {
     font-size: 13px;
     border-radius: 10px;
     background: rgba(161, 31, 8, 0.9);
-    padding: 8px 8px 8px 8px;    
-    margin-left: 11%;   
-    color: rgb(242,242,242);
+    padding: 8px 8px 8px 8px;
+    margin-left: 11%;
+    color: rgb(242, 242, 242);
 }
 
 #timed {
@@ -442,18 +459,16 @@ a:focus {
     float: left;
     font-size: 13px;
     border-radius: 10px;
-    background: rgba(50,50,50,0.9);
-    padding: 8px 8px 8px 8px;   
-    margin-left: 20px;   
+    background: rgba(50, 50, 50, 0.9);
+    padding: 8px 8px 8px 8px;
+    margin-left: 20px;
     color: cyan;
     border: 0;
 }
 
-#message {  
-    
-}
+#message {}
 
-#sessions, 
+#sessions,
 #languages {
     color: black;
     background-color: transparent;
@@ -462,14 +477,14 @@ a:focus {
     font-family: Chivo;
 }
 
-#sessions td a, 
+#sessions td a,
 #languages td a {
     font-family: Chivo;
     display: block;
     line-height: 34px;
     width: 100%;
     height: 32px;
-    color: #946537;   
+    color: #946537;
     background-color: transparent;
 }
 
@@ -479,9 +494,7 @@ a:focus {
     text-align: left;
 }
 
-
-
-.popover{
+.popover {
     font-family: Chivo;
     width: 300px;
     max-width: 300px;
@@ -496,7 +509,7 @@ a:focus {
 */
 
 .popover-title {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 20px;
     height: 40px;
     border-radius: 10px;
@@ -512,15 +525,15 @@ a:focus {
     padding: 0;
     font-family: Chivo;
 }
-    
+
 .popover .arrow {
     display: none;
 }
 
 tr {
     background: transparent;
-    border-bottom: 2px solid rgba(255,102,0,0.21);
-    border-top: 2px solid rgba(255,102,0,0.21);
+    border-bottom: 2px solid rgba(255, 102, 0, 0.21);
+    border-top: 2px solid rgba(255, 102, 0, 0.21);
 }
 
 .table-condensed tbody>tr>td {
@@ -532,9 +545,15 @@ tbody {
     margin-bottom: 20px;
 }
 
-::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{display:none}::-webkit-scrollbar-thumb{border-radius:8px;background-color:rgba(0,0,0,.1);}
+::-webkit-scrollbar {
+    width: 8px
+}
 
-a {color:#dedede;text-decoration:none;}      /* unvisited link */
-a:hover {color:#ffffff;text-decoration:none;}  /* mouse over link */
+::-webkit-scrollbar-track {
+    display: none
+}
 
-
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .1);
+}
