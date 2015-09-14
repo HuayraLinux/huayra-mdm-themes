@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.15) torbellino; urgency=medium
+
+  * Fix para que no se seleccionen los elementos por accidente.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Mon, 14 Sep 2015 12:26:05 -0300
+
 huayra-mdm-themes (1.14) torbellino; urgency=medium
 
   * Fix en botones de selección de usuario.

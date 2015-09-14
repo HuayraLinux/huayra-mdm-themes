@@ -3,11 +3,20 @@
     src: url("fonts/Chivo-Regular.ttf");
 }
 
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 html {
     background-color: #000000;
 }
 
-body {  
+body {
     font-family: Chivo;
     position: absolute;
     height: 100%;
@@ -16,7 +25,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+
 }
 
 a:focus {
@@ -45,9 +54,9 @@ a:focus {
     top: 55%;
 }
 
-#left_box { 
+#left_box {
     display:table;
-    position: fixed;    
+    position: fixed;
     width: 100%;
     height: 90%;
 }
@@ -62,14 +71,14 @@ a:focus {
     color: white;
 }
 
-#top_box {  
+#top_box {
     position: absolute;
     width: 100%;
     top: 0;
     display: none;
 }
 
-#top_inner_box {    
+#top_inner_box {
     display: block;
     position: relative;
     margin: 0 auto;
@@ -79,7 +88,7 @@ a:focus {
     position: static;
     width: 100%;
     top: 0px;
-    left: 0px;  
+    left: 0px;
 }
 #top_users {
     position: static;
@@ -121,7 +130,7 @@ a:focus {
     position: fixed;
     right: 0px;
     vertical-align: middle;
-    height: 90%;   
+    height: 90%;
     width: 10%;
 }
 
@@ -135,14 +144,14 @@ a:focus {
 .user_box {
     color: #946537;
     position: relative;
-    margin-left: 250px; 
+    margin-left: 250px;
     text-align: left;
     font-family: "Chivo";
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.font_username {    
+.font_username {
     font-family: "Chivo";
     font-size:20px;
     font-weight: normal;
@@ -155,9 +164,9 @@ a:focus {
     font-weight: lighter;
 }
 
-#selected_user .font_username { 
+#selected_user .font_username {
     padding: 6px 10px 6px 10px;
-    font-family: "Chivo";    
+    font-family: "Chivo";
     font-size:20px;
     text-shadow: none;
     border: 1px solid #ffc082;
@@ -228,7 +237,7 @@ a:focus {
 #selected_avatar {
     position:absolute;
     left: 24px;
-    top: 0px;  
+    top: 0px;
     width: 96px;
     height: 96px;
     border: 8px solid white;
@@ -240,17 +249,17 @@ a:focus {
 #selected_status {
     position: absolute;
     margin-left: 135px;
-    margin-top: 180px;  
+    margin-top: 180px;
     font-style: italic;
     font-family: "Chivo";
     font-size:14px;
-    line-height: 20px;  
+    line-height: 20px;
     font-weight:300;
     color: rgb(92, 57, 32);
 }
 
 #entry_box {
-    position: absolute; 
+    position: absolute;
     margin-top: 120px;
     margin-left: 120px;
     height: 55px;
@@ -264,23 +273,23 @@ a:focus {
     display: block;
     width: 200px;
     height: 37px;
-    padding: 5px 5px 5px 10px;  
+    padding: 5px 5px 5px 10px;
     font-size: 20px;
     outline: none;
-    -webkit-transition: .3s ease-in-out;  
-    -moz-transition: .3s ease-in-out;      
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
     background: #ffc082;
     border-radius: 10px;
     border: none;
     color: #4d4d4d;
 }
- 
-#entry:focus {      
+
+#entry:focus {
      box-shadow:inset 0 0 1px 1px rgba(255,255,255,0.4);
 }
 
 #ok_button_box {
-    position: absolute; 
+    position: absolute;
     margin-top: 133px;
     margin-left: 263px;
     width: 118px;
@@ -298,15 +307,15 @@ a:focus {
     color: white;
 }
 
-.session-picture, 
+.session-picture,
 .language-picture {
     width: 32px;
-    height: 32px;   
-    margin-right: 5px;  
+    height: 32px;
+    margin-right: 5px;
 }
 
-/*#welcome_message {    
-    position: relative; 
+/*#welcome_message {
+    position: relative;
     top: 50%;
     color: #fff;
     font-family: "Sawasdee";
@@ -314,19 +323,19 @@ a:focus {
     font-size:40px;
     line-height: 40px;
     font-weight:300;
-    width: 100%;    
+    width: 100%;
 }
 */
 
 #lsb {
-    position: relative;     
+    position: relative;
     margin-left: auto;
     color: #999;
     width: 100%;
     font-family: "Chivo";
     text-shadow: 0 1px 3px #000;
     font-size:30px;
-    line-height: 40px;  
+    line-height: 40px;
     font-weight:300;
 /*
     visibility: hidden;
@@ -338,7 +347,7 @@ a:focus {
     position: absolute;
     right: 0;
     bottom: 5%;
-    text-align:right;        
+    text-align:right;
     height: 40px;
     width: 100%;
     padding-top: 5px;
@@ -365,7 +374,7 @@ a:focus {
     width: 28px;
     height: 28px;
     margin: 0 8px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #clock {
@@ -393,7 +402,7 @@ a:focus {
 
 
 #quit_dialog {
-    
+
 }
 
 #quit:hover {
@@ -432,8 +441,8 @@ a:focus {
     font-size: 13px;
     border-radius: 10px;
     background: rgba(161, 31, 8, 0.9);
-    padding: 8px 8px 8px 8px;    
-    margin-left: 11%;   
+    padding: 8px 8px 8px 8px;
+    margin-left: 11%;
     color: rgb(242,242,242);
 }
 
@@ -443,17 +452,17 @@ a:focus {
     font-size: 13px;
     border-radius: 10px;
     background: rgba(50,50,50,0.9);
-    padding: 8px 8px 8px 8px;   
-    margin-left: 20px;   
+    padding: 8px 8px 8px 8px;
+    margin-left: 20px;
     color: cyan;
     border: 0;
 }
 
-#message {  
-    
+#message {
+
 }
 
-#sessions, 
+#sessions,
 #languages {
     color: black;
     background-color: transparent;
@@ -462,14 +471,14 @@ a:focus {
     font-family: Chivo;
 }
 
-#sessions td a, 
+#sessions td a,
 #languages td a {
     font-family: Chivo;
     display: block;
     line-height: 34px;
     width: 100%;
     height: 32px;
-    color: #946537;   
+    color: #946537;
     background-color: transparent;
 }
 
@@ -512,7 +521,7 @@ a:focus {
     padding: 0;
     font-family: Chivo;
 }
-    
+
 .popover .arrow {
     display: none;
 }
@@ -536,5 +545,3 @@ tbody {
 
 a {color:#dedede;text-decoration:none;}      /* unvisited link */
 a:hover {color:#ffffff;text-decoration:none;}  /* mouse over link */
-
-
