@@ -12,6 +12,16 @@
     user-select: none;
 }
 
+#entry,
+input#entry {
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+    -khtml-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
 html {
     background-color: #000000;
 }

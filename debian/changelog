@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.16) torbellino; urgency=medium
+
+  * Fix sobre commit anterior que inutilizaba el input de password.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 15 Sep 2015 11:31:31 -0300
+
 huayra-mdm-themes (1.15) torbellino; urgency=medium
 
   * Fix para que no se seleccionen los elementos por accidente.
