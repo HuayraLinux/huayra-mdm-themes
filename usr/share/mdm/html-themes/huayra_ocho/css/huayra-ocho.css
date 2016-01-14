@@ -1,0 +1,71 @@
+* {
+	color: #7872d8;
+	font-family: 'Commodore 64 Pixelized';
+}
+body {
+	width: 1920px;
+	height: 1080px;
+	padding: 1%;
+	background-color: #6751da;
+}
+
+.commodore-marco-1 {
+	width: 100%;
+	height: 100%;
+	background-color: #7872d8;
+	padding: 6%;
+}
+.commodore-marco-2 {
+	width: 100%;
+	height: 100%;
+	background-color: #3934a0;
+
+}
+
+h1 {
+	margin: 0;
+}
+
+.commodore-basic {
+	margin: 0;
+	font-size: 36px;
+}
+
+.commodore-basic label {
+	margin: 0;
+	font-weight: normal;
+}
+
+.commodore-basic input {
+	text-transform: uppercase;
+	margin: 0;
+	background-color: transparent;
+	color: #7872d8;
+	border: 0;
+	focus: 0;
+}
+
+input,
+textarea {
+    font-size: 24px;
+    padding: 10px;
+
+    color: red;
+    text-shadow: 0px 0px 0px #000;
+    -webkit-text-fill-color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color:
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+.divide30 {
+	height: 30px;
+}
+
+.center {
+	text-align: center;
+}
