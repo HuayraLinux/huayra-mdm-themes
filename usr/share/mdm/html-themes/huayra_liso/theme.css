@@ -125,6 +125,7 @@ a:focus {
 }
 
 #selected_user .user_box {
+	width: 360px;
     color: #4d4d4d;
     position: absolute;
     margin-left: 70px;
@@ -186,9 +187,9 @@ a:focus {
 }
 
 #selected_user .font_gecos {
-    padding: 11px 12px 8px 0;
+    padding: 15px 12px 9px 0;
     font-family: "Chivo";
-    font-size: 16px;
+    font-size: 12px;
     font-style: italic;
     font-weight: lighter;
     text-shadow: none;
@@ -273,7 +274,7 @@ a:focus {
     margin-top: 120px;
     margin-left: 120px;
     height: 55px;
-    width: 260px;
+    width: 309px;
     background-color: white;
     border-radius: 10px;
     padding: 10px 12px 8px 11px;
@@ -281,7 +282,7 @@ a:focus {
 
 #entry {
     display: block;
-    width: 200px;
+    width: 252px;
     height: 37px;
     padding: 5px 5px 5px 10px;
     font-size: 20px;
@@ -301,7 +302,7 @@ a:focus {
 #ok_button_box {
     position: absolute;
     margin-top: 133px;
-    margin-left: 263px;
+    margin-left: 304px;
     width: 118px;
     height: 24px;
 }
@@ -309,7 +310,7 @@ a:focus {
 #ok_button {
     width: 25px;
     height: 35px;
-    margin-left: 63px;
+    margin-left: 85px;
     font-size: 12px;
     background: transparent url(img/ok_button.png) center center no-repeat;
     border-radius: 0;

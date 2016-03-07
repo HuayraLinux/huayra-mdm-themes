@@ -136,12 +136,12 @@
             document.getElementById("timed").style.display = 'none';            
             document.getElementById("current_session_picture").width = 16;
             
-            mdm_add_user("Test", "Test", "logged");
-            mdm_add_user("Proboleta", "sarlanga perez", "");
+            mdm_add_user("Normal", "Usuario Normal", "logged");
+            mdm_add_user("Verylarge", "sarlanga perez esquivel araoz", "");
+            mdm_add_user("Vacio", "", "");
             mdm_add_session("Mate", "mate");
             mdm_add_session("Sesión de XFCE", "xfce.desktop");
             mdm_add_session("Ubuntu", "ubuntu.desktop");
-            mdm_add_user("Gualicho", "Gualicho Gomez", "");
             mdm_add_language("US English", "us");
             mdm_add_language("Spanish", "es");
         }
@@ -168,10 +168,13 @@
 
             var font_gecos = document.createElement('font');
                 font_gecos.setAttribute('class', "font_gecos");
-                if (gecos.length != 0) {
-                    font_gecos.innerHTML = " (" + gecos + ")";
+                if (gecos.length >= 22) {
+					var gecos_trimmed = gecos.substring(0, 23)
+                    font_gecos.innerHTML = " ( " + gecos_trimmed + "... )";
+                } else if (gecos.length == 0) {
+					font_gecos.innerHTML = gecos;
                 } else {
-                    font_gecos.innerHTML = gecos;
+                    font_gecos.innerHTML = " ( " + gecos + " ) ";
                 }
 
             var div_users_arrows = document.createElement('div');

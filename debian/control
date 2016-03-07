@@ -49,3 +49,11 @@ Replaces: huayra-mdm-themes ( <= 1.6)
 Architecture: all
 Description: Tema Huayra Liso para MDM Login Manager.
  Tema oficial de MDM para Huayra 3.0.
+
+Package: huayra-mdm-themes-ocho
+Depends: ${misc:Depends}, huayra-mdm-themes-common
+Breaks: huayra-mdm-themes ( <=1.6)
+Replaces: huayra-mdm-themes ( <= 1.6)
+Architecture: all
+Description: Tema Huayra Ocho para MDM Login Manager.
+ Tema oficial de MDM para Huayra 4.0.

@@ -204,6 +204,17 @@ img.session-picture {
 	height: 60px;
 }
 
+.img.language-picture {
+	height: 50px;
+	width: 130px;
+}
+
+img#current_session_picture,
+img#current_languange_flag {
+	width: auto;
+	height: 60px;
+}
+
 /* Helpers */
 
 .divide30 {

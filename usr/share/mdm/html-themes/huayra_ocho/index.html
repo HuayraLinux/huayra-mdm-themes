@@ -219,7 +219,8 @@
             filename = filename.replace(/\)/g, "");
             document.getElementById("current_session_picture").src = "img/sessions/"+filename+".svg";
             document.getElementById("current_session_picture").title = session_name;
-            document.getElementById("current_session_picture").width = 16;
+            document.getElementById("current_session_picture").width = 85;
+            document.getElementById("current_session_picture").height = 60;
             $('#current_session_picture').popover('hide');
         }
 
@@ -273,7 +274,8 @@
             }
             document.getElementById("current_language_flag").src = "../../common/img/languages/"+filename+".png";
             document.getElementById("current_language_flag").title = language_name;
-            //document.getElementById("current_language_flag").width = 16;
+            document.getElementById("current_language_flag").width = 82;
+            document.getElementById("current_language_flag").height = 50;
         }
 
         function mdm_set_current_user(username) {
@@ -449,9 +451,9 @@
 			</div>
 		</div>
 					<div id="options">
-				<img id="current_session_picture" class="selection-picture" src="img/session_generic.svg" width="85" height="77" data-container="body" data-toggle="popover" data-placement="top" />
-				<img id="current_language_flag" class="selection-picture" src="img/lang_generic.png" height="80" data-container="body" data-toggle="popover" data-placement="top"/>
-				<img id="quit_dialog" class="selection-picture" src="img/shutdown.png" height="80" data-container="body" data-toggle="popover" data-placement="top" />
+				<img id="current_session_picture" class="selection-picture" src="img/session_generic.svg" width="85" height="60" data-container="body" data-toggle="popover" data-placement="top" />
+				<img id="current_language_flag" class="selection-picture" src="img/lang_generic.png" width="82" height="50" data-container="body" data-toggle="popover" data-placement="top"/>
+				<img id="quit_dialog" class="selection-picture" src="img/shutdown.png" height="60" data-container="body" data-toggle="popover" data-placement="top" />
 			</div>
     </div>
 
