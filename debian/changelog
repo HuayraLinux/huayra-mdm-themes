@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.18) torbellino; urgency=medium
+
+  * Sacando usuarios de prueba de Huayra Liso.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Tue, 08 Mar 2016 15:04:55 -0300
+
 huayra-mdm-themes (1.17) torbellino; urgency=medium
 
   * Fix en Huayra Liso para nombre completo. Se agrega Huayra Ocho.
