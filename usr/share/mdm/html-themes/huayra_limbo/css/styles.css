@@ -237,6 +237,24 @@ a.user:visited, .user:visited, a.user:hover, a.user:active, .user:active, a.user
     box-shadow: 0 0 6px rgba(0,0,0,0.6);
 }
 
+#timed {
+    display: block;
+    position: absolute;
+    width: 240px;
+    top: 72%;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color: #5bc0de
+    font-size: 0.9em;
+    left: 0;
+    right: 0;
+    margin: 10px auto 0 auto;
+    padding: 0 8px 0 8px;
+    text-align: center;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
 #menu-bar {
     display: block;
     position: absolute;

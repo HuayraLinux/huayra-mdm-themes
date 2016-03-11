@@ -1,3 +1,9 @@
+huayra-mdm-themes (1.19) torbellino; urgency=medium
+
+  * Fix en tema Limbo para el mensaje de timed login.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Fri, 11 Mar 2016 11:50:24 -0300
+
 huayra-mdm-themes (1.18) torbellino; urgency=medium
 
   * Sacando usuarios de prueba de Huayra Liso.
