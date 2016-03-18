@@ -245,7 +245,7 @@ a.user:visited, .user:visited, a.user:hover, a.user:active, .user:active, a.user
     color: white;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    background-color: #5bc0de
+    background-color: #5bc0de;
     font-size: 0.9em;
     left: 0;
     right: 0;
