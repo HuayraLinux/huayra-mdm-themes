@@ -2,31 +2,31 @@ huayra-mdm-themes (1.21) UNRELEASED; urgency=medium
 
   * Agregando iconos de sesion en 8 bits. 
 
- -- Ivan Hoffmann <digitalh@huayra>  Thu, 16 Jun 2016 15:15:42 -0300
+ -- Ivan Hoffmann <digital.h@gmail.com>  Thu, 16 Jun 2016 15:15:42 -0300
 
 huayra-mdm-themes (1.20) torbellino; urgency=medium
 
   * Fix de typo en estilo de Limbo.
 
- -- Iván Hoffmann <digital.h@gmail.com.ar>  Fri, 11 Mar 2016 12:33:24 -0300
+ -- Iván Hoffmann <digital.h@gmail.com>  Fri, 11 Mar 2016 12:33:24 -0300
 
 huayra-mdm-themes (1.19) torbellino; urgency=medium
 
   * Fix en tema Limbo para el mensaje de timed login.
 
- -- Iván Hoffmann <digital.h@gmail.com.ar>  Fri, 11 Mar 2016 11:50:24 -0300
+ -- Iván Hoffmann <digital.h@gmail.com>  Fri, 11 Mar 2016 11:50:24 -0300
 
 huayra-mdm-themes (1.18) torbellino; urgency=medium
 
   * Sacando usuarios de prueba de Huayra Liso.
 
- -- Iván Hoffmann <digital.h@gmail.com.ar>  Tue, 08 Mar 2016 15:04:55 -0300
+ -- Iván Hoffmann <digital.h@gmail.com>  Tue, 08 Mar 2016 15:04:55 -0300
 
 huayra-mdm-themes (1.17) torbellino; urgency=medium
 
   * Fix en Huayra Liso para nombre completo. Se agrega Huayra Ocho.
 
- -- Iván Hoffmann <digital.h@gmail.com.ar>  Mon, 07 Mar 2016 14:24:47 -0300
+ -- Iván Hoffmann <digital.h@gmail.com>  Mon, 07 Mar 2016 14:24:47 -0300
 
 huayra-mdm-themes (1.16) torbellino; urgency=medium
 
