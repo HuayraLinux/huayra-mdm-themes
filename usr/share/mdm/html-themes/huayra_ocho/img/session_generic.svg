@@ -9,46 +9,49 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="93.333878"
-   height="84.800003"
-   viewBox="0 0 93.333879 84.800004"
+   width="90"
+   height="90"
+   viewBox="0 0 90.000001 90.000001"
    id="svg6650"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="session_generic.svg">
+   sodipodi:docname="session_generic.svg"
+   inkscape:export-filename="/home/digitalh/repos/huayra-mdm-themes/usr/share/mdm/html-themes/huayra_ocho/img/session_generic.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs6652">
     <filter
        style="color-interpolation-filters:sRGB"
        inkscape:label="Drop Shadow"
-       id="filter6597">
+       id="filter4231">
       <feFlood
          flood-opacity="1"
          flood-color="rgb(0,0,0)"
          result="flood"
-         id="feFlood6599" />
+         id="feFlood4233" />
       <feComposite
          in="flood"
          in2="SourceGraphic"
          operator="in"
          result="composite1"
-         id="feComposite6601" />
+         id="feComposite4235" />
       <feGaussianBlur
          in="composite1"
-         stdDeviation="6"
+         stdDeviation="1"
          result="blur"
-         id="feGaussianBlur6603" />
+         id="feGaussianBlur4237" />
       <feOffset
          dx="0"
          dy="0"
          result="offset"
-         id="feOffset6605" />
+         id="feOffset4239" />
       <feComposite
          in="SourceGraphic"
          in2="offset"
          operator="over"
          result="composite2"
-         id="feComposite6607" />
+         id="feComposite4241" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -59,7 +62,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="50.238415"
+     inkscape:cx="44.85133"
      inkscape:cy="42.400042"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -69,10 +72,10 @@
      fit-margin-left="4"
      fit-margin-right="4"
      fit-margin-bottom="4"
-     inkscape:window-width="1913"
-     inkscape:window-height="1026"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="1440"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata6655">
@@ -90,11 +93,11 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(606.66699,150.0378)">
+     transform="translate(606.66699,155.2378)">
     <g
        id="g5970"
-       transform="translate(-1263.6656,-1279.1842)"
-       style="display:inline;filter:url(#filter6597)"
+       transform="translate(-1265.3325,-1281.7842)"
+       style="display:inline;filter:url(#filter4231)"
        inkscape:export-filename="/home/digitalh/repos/huayra-mdm-themes/usr/share/mdm/html-themes/huayra_ocho/img/session_generic.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">

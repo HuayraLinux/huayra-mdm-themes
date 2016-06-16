@@ -188,7 +188,7 @@
                 
             var picture = document.createElement('img');
                 picture.setAttribute('class', "session-picture");
-                picture.setAttribute('src', "img/sessions/"+filename+".svg");
+                picture.setAttribute('src', "img/sessions/"+filename+".png");
                 picture.setAttribute('onerror', "this.src='img/session_generic.svg';");
                             
             var name_div = document.createTextNode(session_name);               
@@ -219,8 +219,8 @@
             filename = filename.replace(/\)/g, "");
             document.getElementById("current_session_picture").src = "img/sessions/"+filename+".svg";
             document.getElementById("current_session_picture").title = session_name;
-            document.getElementById("current_session_picture").width = 85;
-            document.getElementById("current_session_picture").height = 60;
+            document.getElementById("current_session_picture").width = 90;
+            document.getElementById("current_session_picture").height = 90;
             $('#current_session_picture').popover('hide');
         }
 
@@ -242,7 +242,7 @@
 
             var picture = document.createElement('img');
                 picture.setAttribute('class', "language-picture");
-                picture.setAttribute('src', "img/languages/"+filename+".svg");
+                picture.setAttribute('src', "img/languages/"+filename+".png");
                 //~ picture.setAttribute('onerror', "this.src='../../common/img/languages/generic.png';");
                 picture.setAttribute('onerror', "this.src='img/lang_generic.svg';");
                 picture.setAttribute('title', language_name);               
@@ -272,10 +272,10 @@
             if (bits.length == 2) {
                 filename = bits[1];
             }
-            document.getElementById("current_language_flag").src = "../../common/img/languages/"+filename+".png";
+            document.getElementById("current_language_flag").src = "img/languages/"+filename+".svg";
             document.getElementById("current_language_flag").title = language_name;
-            document.getElementById("current_language_flag").width = 82;
-            document.getElementById("current_language_flag").height = 50;
+            document.getElementById("current_language_flag").width = 90;
+            document.getElementById("current_language_flag").height = 90;
         }
 
         function mdm_set_current_user(username) {
